@@ -13,6 +13,7 @@
 #nav-bar .header {
   float: left;
   font-size: 40px;
+  position: absolute;
   line-height: 2;
 }
 
