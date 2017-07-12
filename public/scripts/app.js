@@ -38,7 +38,7 @@ $(document).ready(function(){
 
   function isValid() {
     var charLength = $(".new-tweet textarea").val().length;
-    if (charLength === 0) {
+    if (!charLength) {
       alert("Tweet is empty")
       return false;
     }
@@ -60,12 +60,20 @@ $(document).ready(function(){
       })
         .done(() => {
           loadTweets();
+          $('.new-tweet textarea').val('');
         })
     }
   }
 
+  function toggleComposeBox(event) {
+    $('.new-tweet').slideToggle("slow", () => {
+      $('.new-tweet textarea').focus();
+    });
+  }
+
   // Event handlers
   $('#submit-tweet-form').on('submit', postTweet);
+  $('.compose-button').on('click', toggleComposeBox);
 
   // Do first load
   loadTweets();
