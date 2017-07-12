@@ -65,7 +65,7 @@ $(document).ready(function(){
     }
   }
 
-  function toggleComposeBox(event) {
+  function toggleComposeBox() {
     $('.new-tweet').slideToggle("slow", () => {
       $('.new-tweet textarea').focus();
     });
