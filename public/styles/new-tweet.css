@@ -3,7 +3,7 @@
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 3em;
-  padding-bottom: 8em;
+  padding-bottom: 1em;
 }
 
 .new-tweet {
@@ -11,7 +11,6 @@
   border-radius: 5px;
   border: 1px solid #111;
   padding: 10px;
-  margin-bottom: 10px;
 }
 
 .new-tweet textarea {
@@ -43,7 +42,7 @@
 }
 
 .tweet:hover {
-  border: 1px solid #111;
+  border: 1px solid #222;
   opacity: 1.0;
 }
 
