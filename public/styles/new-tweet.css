@@ -56,8 +56,9 @@
 }
 
 .tweet-thumbnail {
+  border-radius: 5px;
   float: left;
-  padding-top: 13px;
+  margin-top: 13px;
 }
 
 .tweet-handle {
