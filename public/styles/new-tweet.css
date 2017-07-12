@@ -30,14 +30,13 @@
 }
 
 #tweet-container {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1em;
 }
 
 .tweet {
   border-radius: 5px;
   border: 1px solid #999;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
   opacity: 0.8;
 }
 
@@ -53,14 +52,21 @@
   padding-right : 10px;
 }
 
+.tweet-thumbnail {
+  float: left;
+  padding-top: 13px;
+}
+
 .tweet-handle {
   display: inline-block;
   float: right;
+  padding-top: 26px;
 }
 
 .tweet-name {
   font-size: 150%;
   display: inline-block;
+  padding-left: 10px;
 }
 
 .tweet-body {
@@ -73,5 +79,19 @@
   color: #888;
   font-weight: 200;
   font-size: 75%;
-  padding-left: 10px;
+  padding: 10px;
+}
+
+.tweet-timestamp {
+  display: inline-block;
+}
+
+.fa {
+  display: none;
+}
+
+.tweet:hover .fa {
+  display: inline-block;
+  float: right;
+  padding-left: 5px;
 }
