@@ -10,6 +10,7 @@
   background: #eee;
   border-radius: 5px;
   border: 1px solid #111;
+  display: none;
   margin-bottom: 1em;
   padding: 10px;
 }
