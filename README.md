@@ -24,3 +24,4 @@ Tweeter is a simple, single-page AJAX-based Twitter clone that uses jQuery, HTML
 - md5
 - moment
 - node-sass
+- dotenv
