@@ -1,7 +1,7 @@
 #nav-bar {
   background-color: #00a087;
   color: #e8fdff;
-  height: 80px;
+  height: $navBarHeight;
   padding-left: 2em;
   padding-right: 2em;
   position: fixed;
@@ -11,15 +11,15 @@
 
   .header {
     float: left;
-    font-size: 40px;
+    font-size: $navBarHeight * 0.5;
     position: absolute;
     line-height: 2;
   }
 
   .logo {
     float: left;
-    height: 80px;
-    width: 80px;
+    height: $navBarHeight;
+    width: $navBarHeight;
   }
 
   .compose-button {

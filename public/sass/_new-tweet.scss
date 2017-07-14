@@ -1,30 +1,35 @@
 .container {
+  background-color: #ffffff;
   height: 100%;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 3em;
-  padding-bottom: 1em;
+  margin: 0 auto;
+  padding-left: $containerPadding;
+  padding-right: $containerPadding;
+  padding-top: $containerPadding * 1.5;
+  padding-bottom: $containerPadding * 0.5;
+  position: relative;
+  top: 50px;
+  width: $bodyWidth;
 }
 
 .new-tweet {
   background: #eee;
-  border-radius: 5px;
+  border-radius: $tweetPadding * 0.5;
   border: 1px solid #111;
   display: none;
   margin-bottom: 1em;
-  padding: 10px;
+  padding: $tweetPadding;
 
   textarea {
     height: 80px;
-    margin-bottom: 10px;
-    padding: 5px;
+    margin-bottom: $tweetPadding;
+    padding: $tweetPadding * 0.5;
     width: 100%;
   }
 
   h2 {
     border-bottom: 1px solid #888;
     margin-top: 0;
-    padding-bottom: 5px;
+    padding-bottom: $tweetPadding * 0.5;
   }
 
   input:hover {
@@ -37,7 +42,7 @@
 }
 
 .tweet {
-  border-radius: 5px;
+  border-radius: $tweetPadding * 0.5;
   border: 1px solid #999;
   margin-bottom: 1em;
   opacity: 0.8;
@@ -49,40 +54,40 @@
     .fa {
       display: inline-block;
       float: right;
-      padding-left: 5px;
+      padding-left: $tweetPadding * 0.5;
     };
   }
 }
 
 .tweet-header {
   background: #eee;
-  border-radius: 5px 5px 0 0;
-  padding-left : 10px;
-  padding-right : 10px;
+  border-radius: $tweetPadding * 0.5 $tweetPadding * 0.5 0 0;
+  padding-left : $tweetPadding;
+  padding-right : $tweetPadding;
   position: relative;
 }
 
 .tweet-thumbnail {
-  border-radius: 5px;
+  border-radius: $tweetPadding * 0.5;
   float: left;
   margin-top: 13px;
 }
 
 .tweet-handle {
   position: absolute;
-  right: 10px;
+  right: $tweetPadding;
   top: 26px;
 }
 
 .tweet-name {
   font-size: 150%;
   display: inline-block;
-  padding-left: 10px;
+  padding-left: $tweetPadding;
 }
 
 .tweet-body {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: $tweetPadding;
+  padding-right: $tweetPadding;
 }
 
 .tweet-footer {
@@ -90,7 +95,7 @@
   color: #888;
   font-weight: 200;
   font-size: 75%;
-  padding: 10px;
+  padding: $tweetPadding;
 }
 
 .tweet-timestamp {

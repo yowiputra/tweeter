@@ -6,16 +6,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #eee;
-  color: #244751;
-  margin: 0;
-  position: relative; }
-  body .container {
-    background-color: #ffffff;
-    margin: 0 auto;
-    position: relative;
-    top: 50px;
-    width: 450px; }
+  background-color: #eee; }
 
 #nav-bar {
   background-color: #00a087;
@@ -53,11 +44,16 @@ body {
       opacity: 1; }
 
 .container {
+  background-color: #ffffff;
   height: 100%;
+  margin: 0 auto;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 3em;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  position: relative;
+  top: 50px;
+  width: 450px; }
 
 .new-tweet {
   background: #eee;
