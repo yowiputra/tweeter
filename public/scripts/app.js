@@ -11,8 +11,8 @@ $(document).ready(function(){
     main.append($("<p>").addClass("tweet-body").text(dataObj.content.text));
     // create footer and its children
     var footer = $("<footer>").addClass("tweet-footer");
-    var date = new Date(dataObj.created_at*1000);
-    footer.append($("<span>").addClass("tweet-timestamp").text(date.toUTCString()));
+    var date = moment(dataObj.created_at);
+    footer.append($("<span>").addClass("tweet-timestamp").text(date.fromNow()));
     footer.append($("<i>").addClass("fa fa-heart"));
     footer.append($("<i>").addClass("fa fa-retweet"));
     footer.append($("<i>").addClass("fa fa-flag"));
