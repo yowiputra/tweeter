@@ -13,27 +13,27 @@
   display: none;
   margin-bottom: 1em;
   padding: 10px;
-}
 
-.new-tweet textarea {
-  height: 80px;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 100%;
-}
+  textarea {
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
 
-.new-tweet h2 {
-  border-bottom: 1px solid #888;
-  margin-top: 0;
-  padding-bottom: 5px;
-}
+  h2 {
+    border-bottom: 1px solid #888;
+    margin-top: 0;
+    padding-bottom: 5px;
+  }
 
-.new-tweet input:hover {
-  cursor: pointer;
-}
+  input:hover {
+    cursor: pointer;
+  }
 
-.new-tweet .counter {
-  float: right;
+  .counter {
+    float: right;
+  }
 }
 
 .tweet {
@@ -41,11 +41,17 @@
   border: 1px solid #999;
   margin-bottom: 1em;
   opacity: 0.8;
-}
 
-.tweet:hover {
-  border: 1px solid #222;
-  opacity: 1.0;
+  &:hover{
+    border: 1px solid #222;
+    opacity: 1.0;
+
+    .fa {
+      display: inline-block;
+      float: right;
+      padding-left: 5px;
+    };
+  }
 }
 
 .tweet-header {
@@ -93,10 +99,4 @@
 
 .fa {
   display: none;
-}
-
-.tweet:hover .fa {
-  display: inline-block;
-  float: right;
-  padding-left: 5px;
 }
